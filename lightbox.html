@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #lightbox{
+            height:0;
+            width: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all 2s ease-in-out;
+        }
+        #lightbox:target{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            top: 25%;
+            left: 25%;
+
+        }
+    </style>
+</head>
+<body>
+      <div>
+        <a href="#lightbox">LIGHT-BOX</a>
+      </div>
+      <div id="lightbox">
+          <a href="#">X</a>
+          <p>hello it's callad a --</p>
+      </div>
+</body>
+</html>
