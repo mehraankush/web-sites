@@ -129,6 +129,15 @@ section:nth-child(2n+1){
     margin-bottom: 3rem;
 }
 
+@media only screen and (max-width:768px) {
+    
+    .quote{
+        font-size: 1.6rem;
+        color: #bd7823;
+    }
+    
+}
+
 /* skills section */
 .section-heading{
     width: auto;
@@ -147,20 +156,20 @@ section:nth-child(2n+1){
     margin-bottom: 75px;
 }
 .skills-display{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
       width: 70%;
       height: auto;
-      /* border: 2px solid black; */
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      /* border: 2px solid black;  */
 }
 .outer-div{
-    width: 11rem;
+    display: inline-block;
+    width: 11rem ;
     height: 1.8rem;
     background-color: lightgray;
     border-radius: 20px;
-    display: inline-block;
-    margin: 40px;
+    margin: 5rem;
 }
  .inner-dev{
     height:inherit;
